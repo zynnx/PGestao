@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"gestaodolidl","l":"Artigos"},{"p":"gestaodolidl","l":"CartaoCliente"},{"p":"gestaodolidl","l":"Clientes"},{"p":"gestaodolidl","l":"GestaodoLIDL"},{"p":"gestaodolidl","l":"Movimetos"}]
