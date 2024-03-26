@@ -11,15 +11,14 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  *
  * @author Mário Seabra
- * @author Tiago Carvalho
  */
 public class CartaoCliente extends Clientes{
     private static final AtomicInteger count = new AtomicInteger(9999);
-    float saldoCompras;
-    int pontos, idCartao;
-    LinkedList<Movimetos> movimentos;
+    private float saldoCompras;
+    private int pontos, idCartao;
+    private LinkedList<Movimentos> movimentos;
 
-    public CartaoCliente(float saldoCompras, int pontos, LinkedList<Movimetos> movimentos, String nome, String cartaoCidadao, String nif, String morada, String telefone, String email) {
+    public CartaoCliente(float saldoCompras, int pontos, LinkedList<Movimentos> movimentos, String nome, String cartaoCidadao, String nif, String morada, String telefone, String email) {
         super(nome, cartaoCidadao, nif, morada, telefone, email);
         this.saldoCompras = saldoCompras;
         this.pontos = pontos;
@@ -29,5 +28,37 @@ public class CartaoCliente extends Clientes{
 
     public CartaoCliente( String nome, String cartaoCidadao, String nif, String morada, String telefone, String email) {
         super( nome, cartaoCidadao, nif, morada, telefone, email);
+    }
+
+    public float getSaldoCompras() {
+        return saldoCompras;
+    }
+
+    public void setSaldoCompras(float saldoCompras) {
+        this.saldoCompras = saldoCompras;
+    }
+
+    public int getPontos() {
+        return pontos;
+    }
+
+    public void setPontos(int pontos) {
+        this.pontos = pontos;
+    }
+
+    public int getIdCartao() {
+        return idCartao;
+    }
+
+    public void setIdCartao(int idCartao) {
+        this.idCartao = idCartao;
+    }
+
+    public LinkedList<Movimentos> getMovimentos() {
+        return movimentos;
+    }
+
+    public void setMovimentos(LinkedList<Movimentos> movimentos) {
+        this.movimentos = movimentos;
     }
 }

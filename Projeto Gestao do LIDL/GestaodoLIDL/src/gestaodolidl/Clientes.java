@@ -10,13 +10,12 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  *
  * @author Mário Seabra
- * @author Tiago Carvalho
  */
 public class Clientes {
 
     private static final AtomicInteger count = new AtomicInteger(-1);
-    int idCliente;
-    String nome, cartaoCidadao, nif, morada, telefone, email;
+    private int idCliente;
+    private String nome, cartaoCidadao, nif, morada, telefone, email;
 
     public Clientes(String nome, String cartaoCidadao, String nif, String morada, String telefone, String email) {
         this.idCliente = count.incrementAndGet();
@@ -27,5 +26,60 @@ public class Clientes {
         this.telefone = telefone;
         this.email = email;
     }
-    
+
+    public int getIdCliente() {
+        return idCliente;
+    }
+
+    public void setIdCliente(int idCliente) {
+        this.idCliente = idCliente;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCartaoCidadao() {
+        return cartaoCidadao;
+    }
+
+    public void setCartaoCidadao(String cartaoCidadao) {
+        this.cartaoCidadao = cartaoCidadao;
+    }
+
+    public String getNif() {
+        return nif;
+    }
+
+    public void setNif(String nif) {
+        this.nif = nif;
+    }
+
+    public String getMorada() {
+        return morada;
+    }
+
+    public void setMorada(String morada) {
+        this.morada = morada;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 }
